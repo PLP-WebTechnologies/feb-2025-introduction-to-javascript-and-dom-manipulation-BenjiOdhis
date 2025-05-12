@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 Elements Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav>
+  <h1>HTML5 Demo Page 💻✨</h1>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Form</a></li>
+    <li><a href="#">Media</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section class="card">
+    <h2>Top 5 Programming Languages</h2>
+    <ol type="I">
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>Go</li>
+    </ol>
+  </section>
+
+  <!-- External Image -->
+  <section class="card">
+    <h2>Featured Image</h2>
+    <img id="featured-img" src="https://images.pexels.com/photos/574285/pexels-photo-574285.jpeg" alt="Laptop and coding workspace">
+  </section>
+
+  <!-- Contact Table -->
+  <section class="card">
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Jane Doe</td><td>123 Main St</td><td>+1234567890</td><td>jane@example.com</td></tr>
+        <tr><td>John Smith</td><td>456 Oak Ave</td><td>+1987654321</td><td>john@example.com</td></tr>
+        <tr><td>Alice Johnson</td><td>789 Pine Rd</td><td>+1122334455</td><td>alice@example.com</td></tr>
+        <tr><td>Bob Lee</td><td>321 Elm St</td><td>+1222333444</td><td>bob@example.com</td></tr>
+        <tr><td>Chris Kim</td><td>654 Maple Dr</td><td>+1443322110</td><td>chris@example.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="card">
+    <h2>Register Here</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter a valid email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="role">Select Role:</label>
+      <select id="role" name="role" required>
+        <option value="">--Choose a role--</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+      </select><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <label>Skills:</label>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript">
+      <label for="js">JavaScript</label><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Multimedia Elements -->
+  <section class="card">
+    <h2>Multimedia Demo</h2>
+
+    <h3>Background Music 🎵</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Intro Video 🎬</h3>
+    <video width="600" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+<script src="script.js"></script>
+
+</body>
+</html>

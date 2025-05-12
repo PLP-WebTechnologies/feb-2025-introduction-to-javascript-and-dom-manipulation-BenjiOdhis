@@ -1,0 +1,147 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* === Navigation Bar === */
+nav {
+  background-color: #007acc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* === Card Styling === */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* === Featured Image === */
+#featured-img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 2px solid #aaa;
+}
+
+/* === Table Styling === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* === Form Inputs === */
+input, select {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* === Button Styling === */
+button {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* === Flexbox Container for Form Sections === */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Responsive Layout with Media Queries === */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    max-width: 960px;
+    margin: 20px auto;
+  }
+}
